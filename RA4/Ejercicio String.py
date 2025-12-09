@@ -8,3 +8,5 @@ def procesar_cadena(cadena):
 #Ejemplo de uso
 cadena = "Hola buenas tardes"
 print(procesar_cadena(cadena))
+
+#Fin del ejercicio
