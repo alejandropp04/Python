@@ -5,8 +5,6 @@ def procesar_cadena(cadena):
     ultimas_cinco = cadena[-5:]
     return f"La cadena tiene {longitud} letras, en minusculas es '{minusculas}', y las 5 ultimas letras son '{ultimas_cinco}'"
 
-#Ejemplo de uso
-cadena = "Hola buenas tardes"
+#Ejecucion
+cadena = "Hola Buenas Tardes"
 print(procesar_cadena(cadena))
-
-#Ejercicio 1
