@@ -128,3 +128,21 @@ while continuar:
 for articulo in compra.items():
     print(clave, '\t', precio)
 print(f'Total de la compra: {total}')
+
+'''Ejercicio 8: Escribir un programa que cree un diccionario de traduccion español - ingles. El usuario introducirá las palabras en español
+ e ingles separadas por dos puntos y cada par <palabra>:<traduccion> separador por comas. El programa debe crear un diccionario con las palabras y sus traducciones.'''
+
+traduccion = {}
+
+frase = input("introduzca una frase en formato <palabra>:<traducciom>, separada por comas: ")
+
+for i in frase.split(","):
+    clave, valor = i.split(":")
+    traduccion[clave.strip()] = valor.strip()
+frase_espanyol = input("Introduzca la frase en español:")
+for i in frase_espanyol.split():
+    if i in traduccion:
+        print(traduccion[i], end=" ")
+    else:
+        print(i, end=" ")
+
