@@ -1,0 +1,6 @@
+Java es un lenguaje de programación.
+Se utiliza para el desarrollo web, ciencia de datos, automatización y mucho más.
+El aprendizaje automático y la inteligencia artificial son áreas populares de Java.
+Los pandas son una biblioteca de Java para análisis de datos.
+Este archivo de texto es un ejemplo para practicar con ficheros en Java.
+Java es fácil de aprender y tiene una gran comunidad.buenas tardes

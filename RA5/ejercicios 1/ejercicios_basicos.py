@@ -40,4 +40,10 @@ with open("datos.txt", "r") as origen:
     destino.close()
     origen.close()
 
-#EJ7: 
+#EJ7: Invertir el contenido de un fichero
+with open("datos.txt", "r") as f:
+    lineas = f.readlines()
+with open("invertido.txt", "w") as f:
+    for linea in reversed(lineas):
+        f.write(linea)
+    f.close()
