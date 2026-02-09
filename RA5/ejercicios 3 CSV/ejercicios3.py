@@ -73,6 +73,7 @@ estudiantes = [
     {"nombre": "Juan", "edad": "20", "grado": "A"},
     {"nombre": "Ana", "edad": "22", "grado": "B"},
     {"nombre": "Luis", "edad": "21", "grado": "A"},
+    {"nombre": "Ana", "edad": "23", "grado": "C"}
 ]
 
 with open("estudiantes.csv", "w") as f:
@@ -87,10 +88,12 @@ with open("estudiantes.csv") as f:
 #Ejercicio 9: Buscar un registro específico en un archivo CSV
 nombre = input("Ingrese el nombre del estudiante a buscar: ")
 
-
 with open("estudiantes.csv", "r") as f:
     lector = csv.DictReader(f)
     for linea in lector:
         if linea["nombre"].lower() == nombre.lower():
             print(f"Detalles del estudiante: {linea}")
-            break
+        with open("estudiante_encontrado.csv", "a") as f_encontrado:
+                escritor = csv.DictWriter(f_encontrado, fieldnames=lector.fieldnames)
+                escritor.writeheader()
+                escritor.writerow(linea)
