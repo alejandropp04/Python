@@ -18,3 +18,12 @@ if contador_empleados > 0:
     print(f"Salario promedio de los empleados filtrados: {salario_promedio:.2f}")
 else:
     print("No hay empleados con salario superior a 3000.")
+
+
+#Mostrar los empleados con un salario superior a 3000 por pantalla
+print("Empleados con salario superior a 3000:")
+with open("empleados.csv", "r") as f:
+    lector = csv.DictReader(f)
+    for linea in lector:
+        if float(linea["Salario"]) > 3000:
+            print(f"({linea['Nombre']}, {linea['Salario']})")
